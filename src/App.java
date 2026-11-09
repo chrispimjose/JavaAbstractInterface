@@ -34,6 +34,7 @@ public class App {
                     // A variável é do tipo da interface
                     IAcesso administrador = new Administrador(nomeAdministrador);
 
+                    administrador.mostrarUsuario();
                     administrador.acessarSistema();
 
                     break;
@@ -49,6 +50,7 @@ public class App {
                     IAcesso usuario =
                             new UsuarioComum(nomeUsuario);
 
+                    usuario.mostrarUsuario();
                     usuario.acessarSistema();
 
                     break;

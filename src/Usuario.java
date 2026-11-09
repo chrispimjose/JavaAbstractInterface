@@ -8,8 +8,9 @@ public abstract  class Usuario implements IAcesso {
     }
 
     // Método concreto compartilhado pelas subclasses
+    @Override
     public void mostrarUsuario() {
-        System.out.println("Usuário: " + nome);
+        System.out.println("Usuário Cadastrado: " + nome);
     }
 
     // Método abstrato que cada tipo de usuário
